@@ -9,7 +9,7 @@ const EditContact = () => {
   let { id } = useParams();
   let history = useHistory();
   const dispatch = useDispatch();
-  const contact = useSelector((state) => state.contact.contact);
+  const contact = useSelector((state) => state.contacts.contact);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
